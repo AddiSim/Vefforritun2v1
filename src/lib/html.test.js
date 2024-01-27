@@ -12,19 +12,19 @@ describe('HTML Generation', () => {
   test('generateIndexHTML generates expected structure', () => {
     const html = generateIndexHTML();
     expect(html).toContain('<!DOCTYPE html>');
-    expect(html).toContain('<h1>Welcome to the Game Day Overview</h1>');
+    expect(html).toContain('<h1>Insert super title fótboltamót!!</h1>');
   });
 
   test('generateLeikirHTML generates expected structure', () => {
     const html = generateLeikirHTML(mockAllGameData);
     expect(html).toContain('<!DOCTYPE html>');
-    expect(html).toContain('<h1>Matches Overview</h1>');
+    expect(html).toContain('<h1>Úrslit leikja</h1>');
   });
 
   test('generateStadaHTML generates expected structure', () => {
     const html = generateStadaHTML(mockScores);
     expect(html).toContain('<!DOCTYPE html>');
-    expect(html).toContain('<h1>Standings</h1>');
+    expect(html).toContain('<h1>Staðan</h1>');
   });
 });
 
